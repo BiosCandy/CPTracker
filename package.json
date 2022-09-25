@@ -1,0 +1,33 @@
+{
+  "name": "cptracker",
+  "version": "1.0.0",
+  "description": "The ultimate coding contest tracker on the Internet",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "app": "nodemon app",
+    "client": "cd client && npm run start",
+    "dev": "concurrently \"npm run app\" \"npm run client\"",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JanaSabuj/CPTracker.git"
+  },
+  "author": "Samarjeet Kumar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JanaSabuj/CPTracker/issues"
+  },
+  "homepage": "https://github.com/JanaSabuj/CPTracker#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "react-ga": "^2.7.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "nodemon": "^2.0.3"
+  }
+}
