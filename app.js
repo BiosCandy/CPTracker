@@ -39,7 +39,7 @@ app.get("/contest*", (req, res) => {
     })
     .catch((error) => {
       // console.error(error);
-      res.send("Server is 404");
+      res.send("Server is listened at 404");
     });
 });
 
